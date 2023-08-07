@@ -40,8 +40,64 @@ public class Main {
               for ( int n =  1; n <= 3; n++) {
                   System.out.println("Inner: " + n); // Executes 6 times (2*3)
               }
+                // For Loop break, continue
+              for(int s = 0; s < 6; s++) {
+                  if (s == 3) {
+                      break;      // print stop b4 3
+                  }
+
+                  System.out.println(s);
+              }
+
+
+              for(int t = 0; t < 6; t++) {
+                  if (t == 3) {
+                      continue;      // skip 3 and continue the next iteration in the loop
+                  }
+
+                  System.out.println(t);
+              }
+
+
+              // while Loop break, continue
+
+              int i1 = 0;
+                      while (i1 < 10) {
+                          System.out.println(i1);
+                          i1++;
+                          if (i1 == 4) {
+                              break;
+                          }
+                      }
+
+              int m = 0;
+              while (m < 10) {
+
+                  if (m == 4) {
+                      m++;
+                      continue;
+                  }
+                  System.out.println(m);
+                  m++;
+              }
+
+// loop through the items in the cars array.
+
+              String[] cars = {"Volvo","BMW"};
+              for (String r : cars) {
+                  System.out.println(r);
+
+              }
+
+
+
+
+
+
+
 
           }
+
 
 
       }
